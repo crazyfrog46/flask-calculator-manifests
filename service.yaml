@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-calculator-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: flask-calculator
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
