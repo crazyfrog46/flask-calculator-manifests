@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: flask-calculator
-          image: crazyfrog46/flask-calculator:11
+          image: crazyfrog46/flask-calculator:12
           ports:
             - containerPort: 5000
